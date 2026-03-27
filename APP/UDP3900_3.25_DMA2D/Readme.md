@@ -62,7 +62,7 @@ Addr = Base_Addr + 2 * (240 * sy + sx)
 
 由于物理屏幕分辨率为 $240 \times 960$，但在驱动 IC 逻辑中可能存在宽度冗余，配置 DMA2D 时需注意：
 
-*   **分辨率设置**：$240 \times 960$。
+*   **分辨率设置**：   $240 \times 960$。
 *   **行偏移 (Offline) 逻辑**：
     在 DMA2D 配置中，**OOR (Output Offset Register)** 必须严格设置为：
     `OOR = 屏幕总宽度 - 填充区域宽度` (即 $240 - width$)。
