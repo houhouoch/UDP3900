@@ -55,6 +55,7 @@ Addr = Base_Addr + 2 * (240 * sy + sx)
 *   **操作**：调用 `ltdc_color_fill(0, 0, 99, 99, test_buffer)`。
 *   **观察点**：在逻辑坐标 $(0, 0)$ 到 $(99, 99)$ 区域写入特定色块。
 *   **结论**：通过观察小方块在长条形屏幕上的物理位置，最终确认了逻辑原点与扫描增量方向，为后续 LVGL UI 适配提供了准确的坐标映射表。
+<img width="340" height="892" alt="image" src="https://github.com/user-attachments/assets/121653c1-f189-4403-8f25-0ca7ac079dc7" />
 
 ---
 
