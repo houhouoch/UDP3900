@@ -27,7 +27,7 @@
 3. **关键代码配置**：
 ```c
 /* 物理宽度 240, 逻辑宽度 360 -> 起始偏移量 = 360 - 240 = 120 */
-pLayerCfg.WindowX0 = 120;  // 逻辑起始位置 (向右偏移)
+pLayerCfg.WindowX0 = 150;  // 逻辑起始位置 (向右偏移)
 pLayerCfg.WindowX1 = 359;  // 逻辑结束位置
 pLayerCfg.WindowY0 = 0;
 pLayerCfg.WindowY1 = 959;
@@ -35,6 +35,7 @@ pLayerCfg.WindowY1 = 959;
 
 ### 💡 调试结论
 实验观察到红色块完美填充屏幕，左侧逻辑区域显示为蓝色背景（物理不可见）。由此判定该屏幕为 **“左侧物理切割”**，显示内容需通过 LTDC 窗口配置进行 **右对齐** 处理。
+<img width="323" height="832" alt="image" src="https://github.com/user-attachments/assets/6b523003-e05c-4195-943c-3513908fe606" />
 
 ---
 
