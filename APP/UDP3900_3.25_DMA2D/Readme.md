@@ -15,8 +15,8 @@
 ```text
 Addr = Base_Addr + 2 * (240 * sy + sx)
 ```
-*(其中 `Base_Addr` 为 SDRAM 起始地址 `0xD0000000`)*
----
+    *(其中 `Base_Addr` 为 SDRAM 起始地址 `0xD0000000`)*
+
 ### B. M2M (Memory-to-Memory) 模式
 *   **用途**：图像缓冲区高速搬运（如 LVGL 帧刷新、UI 贴图）。
 *   **实现逻辑**：将源缓冲区（SRAM/QSPI）数据无感搬运至目标显存。
