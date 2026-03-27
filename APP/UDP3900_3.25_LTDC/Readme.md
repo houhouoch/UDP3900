@@ -35,7 +35,8 @@ pLayerCfg.WindowY1 = 959;
 
 ### 💡 调试结论
 实验观察到红色块完美填充屏幕，左侧逻辑区域显示为蓝色背景（物理不可见）。由此判定该屏幕为 **“左侧物理切割”**，显示内容需通过 LTDC 窗口配置进行 **右对齐** 处理。
-<img width="323" height="832" alt="image" src="https://github.com/user-attachments/assets/6b523003-e05c-4195-943c-3513908fe606" />
+
+  <img width="323" height="832" alt="image" src="https://github.com/user-attachments/assets/6b523003-e05c-4195-943c-3513908fe606" />
 
 ---
 
