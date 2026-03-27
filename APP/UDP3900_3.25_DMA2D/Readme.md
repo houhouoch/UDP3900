@@ -12,7 +12,9 @@
 *   **用途**：极速纯色填充（如清屏、绘制矩形）。
 *   **实现逻辑**：直接将颜色寄存器中的数值写入目标显存地址。
 *   **线性地址计算**：基于屏幕物理宽度 240 像素进行偏移定位。
-    $$Addr = Base\_Addr + 2 \times (240 \times sy + sx)$$
+```text
+Addr = Base_Addr + 2 * (240 * sy + sx)
+```
     *(其中 $Base\_Addr$ 为 SDRAM 起始地址 $0xD0000000$)*
 
 ### B. M2M (Memory-to-Memory) 模式
