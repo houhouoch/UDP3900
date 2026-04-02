@@ -100,9 +100,9 @@ typedef enum
 {
  CONTROL_OUT_STOP        =0,//BUCK停止
  CONTROL_OUT_EN          =1,//BUCK启动
- CONTROL_SET_OUTSI       =2,//buck输出电流设置*
- CONTROL_SET_OUTLI       =3,//buck输入电流设置*
- CONTROL_SET_OUTV        =4,//输出电压设置*
+ CONTROL_SET_OUTSI       =2,//buck输出电流设置
+ CONTROL_SET_OUTLI       =3,//buck输入电流设置
+ CONTROL_SET_OUTV        =4,//输出电压设置
  CONTROL_SIGN_RESET      =5,//输出，BUCK 故障复位
  CONTROL_OUT_POWER       =6,//输出功率
  CONTROL_IN_POWER        =7,//输入功率
@@ -110,27 +110,27 @@ typedef enum
  CONTROL_SINLK_CR        =9,//负载内阻，CR模式内阻
  CONTROL_CC_CV           =10,//CC,CV优先切换，
  CONTROL_LOAD_MODE       =11,//负载模式
- CONTROL_BUCK_PWMT       =20,//BUCK PWM频率下发*
- CONTROL_BUCK_PWMC       =21,//buck PWMD下发*
+ CONTROL_BUCK_PWMT       =20,//BUCK PWM频率下发
+ CONTROL_BUCK_PWMC       =21,//buck PWMD下发
 
- CONTROL_DC_STOP         =10,
- CONTROL_DC_EN           =11,
- CONTROL_DC_OUTI         =12, //LLC输出电流设置 预留
- CONTROL_DC_OUTV         =14, //LLC输出电压设置 预留
- CONTROL_DC_SIGN_RESET   =15, // LLC 故障复位
- CONTROL_DC_PWMF         =16, //LLC谐振频率
- CONTROL_DC_PWMD         =17, //LLC谐振脉宽设置
- CONTROL_DC_PWMPP        =18, //PWM移相角设置
+ CONTROL_DC_STOP         =50,
+ CONTROL_DC_EN           =51,
+ CONTROL_DC_OUTI         =52, //LLC输出电流设置 预留
+ CONTROL_DC_OUTV         =54, //LLC输出电压设置 预留
+ CONTROL_DC_SIGN_RESET   =55, // LLC 故障复位
+ CONTROL_DC_PWMF         =56, //LLC谐振频率
+ CONTROL_DC_PWMD         =57, //LLC谐振脉宽设置
+ CONTROL_DC_PWMPP        =58, //PWM移相角设置
 
- CONTROL_PFC_STOP        =20,
- CONTROL_PFC_EN          =21,
- CONTROL_PFC_OUTI        =22, //PFC输出电流设置 预留
- CONTROL_PFC_OUTV        =24, //PFC输出电压设置 预留
- CONTROL_PFC_SIGN_RESET  =25, // PFC故障复位
- CONTROL_PFC_PWMF        =26, //PFCpwm频率
- CONTROL_PFC_PWMDA       =27, //PFC A相脉宽设置
- CONTROL_PFC_PWMDB       =28, //PFC B相脉宽设置
- CONTROL_PFC_PWMDC       =29  //PFC C相脉宽设置
+ CONTROL_PFC_STOP        =101,
+ CONTROL_PFC_EN          =102,
+ CONTROL_PFC_OUTI        =103, //PFC输出电流设置 预留
+ CONTROL_PFC_OUTV        =105, //PFC输出电压设置 预留
+ CONTROL_PFC_SIGN_RESET  =106, // PFC故障复位
+ CONTROL_PFC_PWMF        =107, //PFCpwm频率
+ CONTROL_PFC_PWMDA       =108, //PFC A相脉宽设置
+ CONTROL_PFC_PWMDB       =109, //PFC B相脉宽设置
+ CONTROL_PFC_PWMDC       =110  //PFC C相脉宽设置
 }e_can_control;
 typedef enum
 {

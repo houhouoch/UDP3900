@@ -11,9 +11,9 @@ enum {
     // Row 2 (X3)
     BUTTON_1 = 8,   BUTTON_4 = 9,   BUTTON_7 = 10,  BUTTON_DOT = 11,
     // Row 3 (X4)
-    BUTTON_I_SET = 12, BUTTON_HOME = 13, BUTTON_MENU = 14, BUTTON_RIGHT = 15,
+    BUTTON_I_SET = 12, BUTTON_R_SET = 13, BUTTON_MENU = 14, BUTTON_RIGHT = 15,
     // Row 4 (X5)
-    BUTTON_V_SET = 16, BUTTON_P_SET = 17, BUTTON_R_SET = 18, BUTTON_LEFT = 19,
+    BUTTON_V_SET = 16, BUTTON_P_SET = 17, BUTTON_HOME = 18, BUTTON_LEFT = 19,
     // Row 5 (X6)
     BUTTON_LOCK = 20, BUTTON_PROTECT = 21, BUTTON_OUTPUT = 22,
     // Row 6 (X7)
@@ -25,7 +25,7 @@ enum {
 enum {
     KEY_DEFAULT = 0,
     KEY_STATE_RELEASED,                 //按键释放
-    KEY_STATE_HOLD,                     //按键保持
+    KEY_STATE_HOLD,                       //按键保持
     KEY_STATE_CLICKED,                  //按键点击
     KEY_STATE_LONGGP,                   //按键长按
 };
